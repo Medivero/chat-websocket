@@ -1,0 +1,6 @@
+/Users/a1/Desktop/projects/chatproject/backend/src/main/java/com/example/demo/ChatBackendApplication.java
+/Users/a1/Desktop/projects/chatproject/backend/src/main/java/com/example/demo/classes/Message.java
+/Users/a1/Desktop/projects/chatproject/backend/src/main/java/com/example/demo/controllers/ChatController.java
+/Users/a1/Desktop/projects/chatproject/backend/src/main/java/com/example/demo/controllers/ChatHistoryController.java
+/Users/a1/Desktop/projects/chatproject/backend/src/main/java/com/example/demo/repositories/MessageRepository.java
+/Users/a1/Desktop/projects/chatproject/backend/src/main/java/com/example/demo/Сonfigs/WebSocketConfig.java
