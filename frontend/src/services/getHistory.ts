@@ -1,5 +1,7 @@
+import { ApiURL } from "./getApi";
+
 async function getHistory(){
-    const res = await fetch("http://localhost:5050/api/chatHistory/getHistory",{
+    const res = await fetch(ApiURL+"/api/chatHistory/getHistory",{
         method: "GET"
     })
     const data = res.json();

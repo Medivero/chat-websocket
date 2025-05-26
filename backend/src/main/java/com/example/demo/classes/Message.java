@@ -2,6 +2,8 @@ package com.example.demo.classes;
 
 import jakarta.persistence.*;
 
+import java.sql.Time;
+import java.sql.Timestamp;
 import java.time.LocalDateTime;
 import java.util.Date;
 
@@ -13,13 +15,13 @@ public class Message {
     private Long id;
 
     public String content;
-    @Column(name = "time-sent")
-    public LocalDateTime time;
+
+    @Column(name = "time")
+    public LocalDateTime time = LocalDateTime.now();
 
     public Message(Long id, String content) {
         this.id = id;
         this.content = content;
-        this.time = LocalDateTime.now();
     }
     public Message(){}
     public Long getId() {

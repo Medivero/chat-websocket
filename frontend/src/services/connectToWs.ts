@@ -1,10 +1,11 @@
 import { Client} from '@stomp/stompjs';
 
 import SockJS from 'sockjs-client';
+import { ApiURL } from './getApi';
 
 let stompClient: any = null;
 
-const socket = new SockJS("http://localhost:5050/chat/");
+const socket = new SockJS(ApiURL+"/chat/");
 export function connect(setConnected:Function){
   stompClient = new Client({
     webSocketFactory: () => {
