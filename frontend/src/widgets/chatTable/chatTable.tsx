@@ -1,3 +1,4 @@
+
 import { Message } from "../../interfaces/interfaces";
 
 interface HistoryType{
@@ -12,7 +13,7 @@ function ChatTable({history}:HistoryType){
             {history ? history.map((item) => (
                 <div key={item.id} className="border-b w-full flex justify-between bg-gray-200">
                     <span>{item.content}</span>
-                    <span className="text-[10px]">{item.time.split("T")[0]}</span>
+                    <span className="text-[10px]">{item.time.split("T")[1].split(".")[0]}</span>
                 </div>
             )): ""}
         </div>
