@@ -15,7 +15,7 @@ export function connect(setConnected:Function){
       console.log('WebSocket connected');
       stompClient.subscribe('/topic/messages', (message: { body: string; }) => {
         const data = JSON.parse(message.body);
-        console.log(message)
+        console.log("Получено сообщение")
         setConnected(data)
       });
     },
