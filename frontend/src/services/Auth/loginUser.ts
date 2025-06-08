@@ -10,9 +10,14 @@ export interface LoginFormType{
 export async function LoginUser(LoginForm:LoginFormType){
     const res = await fetch(ApiURL+`/api/user/loginUser`,{
         method: "POST",
+        headers: {
+         'Content-Type': 'application/json',
+         "Authorization": "Bearer "
+        },
         body: JSON.stringify(LoginForm)
     })
     try{
+        console.log(res.status)
         if (res.ok){
             const data = await res.json();
             Cookies.set("token",data.token)

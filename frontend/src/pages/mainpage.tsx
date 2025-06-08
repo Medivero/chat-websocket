@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { Suspense, useEffect, useState } from "react"
 import { connect, sendMessage } from "../services/connectToWs";
 import getHistory from "../services/getHistory";
 import ChatTable from "../widgets/chatTable/chatTable";
@@ -41,7 +41,9 @@ function MainPage(){
     return (
         <>
         <div className="p-[20px] flex flex-col gap-[20px]">
-            <ChatTable history={history}></ChatTable>
+            <Suspense fallback="loading">
+                <ChatTable history={history}></ChatTable>
+            </Suspense>
             <form onSubmit={MessageeForm.handleSubmit(getMessageForm)} className="flex gap-[20px]">
                 <input {...MessageeForm.register("message")} placeholder="Ваше сообщение" className="border"></input>
                 <button type="submit" className="border">Отправить</button>
