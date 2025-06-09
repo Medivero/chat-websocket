@@ -3,7 +3,8 @@ import { LoginFormType, LoginUser } from "../services/Auth/loginUser"
 
 interface useAuthStoreType{
     isAuth: boolean,
-    setAuth: (LoginForm:LoginFormType) => void
+    setAuth: (LoginForm:LoginFormType) => void,
+    
 }
 
 
@@ -20,5 +21,6 @@ export const useAuthStore = create<useAuthStoreType>()((set) => (
                 }
             })
         }
+       
     }
 ))

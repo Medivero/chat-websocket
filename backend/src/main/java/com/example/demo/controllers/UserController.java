@@ -15,12 +15,14 @@ import java.util.Collections;
 @RequestMapping("/api/user")
 public class UserController {
     UserRepository repo;
-    BCryptPasswordEncoder bp;
+    BCryptPasswordEncoder bp = new BCryptPasswordEncoder();
     public UserController(UserRepository repo) {
         this.repo = repo;
     }
     @Autowired
     JwtFunctions funcs;
+
+    @CrossOrigin
     @PostMapping("/createUser")
     public ResponseEntity<?> createUser(@RequestBody User user){
         if (repo.existsByName(user.getName())){

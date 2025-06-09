@@ -2,7 +2,7 @@ import { Client} from '@stomp/stompjs';
 
 import SockJS from 'sockjs-client';
 import { ApiURL } from './getApi';
-
+import Cookies from 'js-cookie';
 let stompClient: any = null;
 
 const socket = new SockJS(ApiURL+"/chat/");
@@ -10,6 +10,9 @@ export function connect(setConnected:Function){
   stompClient = new Client({
     webSocketFactory: () => {
         return socket
+    },
+    connectHeaders: {
+      Authorization: `Bearer ${Cookies.get("token")}`,
     },
     onConnect: () => {
       console.log('WebSocket connected');

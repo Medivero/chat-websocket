@@ -7,7 +7,7 @@
 /Users/a1/Desktop/projects/chatproject/backend/src/main/java/com/example/demo/controllers/UserController.java
 /Users/a1/Desktop/projects/chatproject/backend/src/main/java/com/example/demo/repositories/MessageRepository.java
 /Users/a1/Desktop/projects/chatproject/backend/src/main/java/com/example/demo/repositories/UserRepository.java
+/Users/a1/Desktop/projects/chatproject/backend/src/main/java/com/example/demo/utils/JwtFilter.java
 /Users/a1/Desktop/projects/chatproject/backend/src/main/java/com/example/demo/utils/JwtFunctions.java
-/Users/a1/Desktop/projects/chatproject/backend/src/main/java/com/example/demo/utils/jwtFilter.java
 /Users/a1/Desktop/projects/chatproject/backend/src/main/java/com/example/demo/Сonfigs/Config.java
 /Users/a1/Desktop/projects/chatproject/backend/src/main/java/com/example/demo/Сonfigs/WebSocketConfig.java

@@ -1,8 +1,8 @@
-com/example/demo/utils/jwtFilter.class
 com/example/demo/repositories/UserRepository.class
 com/example/demo/utils/JwtFunctions.class
 com/example/demo/Сonfigs/Config.class
 com/example/demo/controllers/UserController.class
 com/example/demo/classes/User.class
 com/example/demo/controllers/ChatHistoryController.class
+com/example/demo/utils/JwtFilter.class
 com/example/demo/classes/LoginUser.class
